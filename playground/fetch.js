@@ -40,6 +40,8 @@ console.log('connected to server');
   console.log('unable to fetch',err);
 });
 
+//  running 2 collection septratelly
+
 db.collection('Users').find({name:'Ashish'}).toArray().then((res) => {
       console.log(JSON.stringify(res, undefined, 2));
   });
